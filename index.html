@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tabela TACO</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <h1>Tabela Brasileira de Composicao de Alimentos</h1>
+
+        <div class="controls">
+            <input type="text" id="search" placeholder="Buscar Alimentos" />
+            <div class="portion-container">
+                <label for="portion">Quantidade (g):</label>
+                <input type="number" id="portion" min="1" value="100" />
+            </div>
+        </div>
+
+        <table id="results">
+            <thead>
+                <tr>
+                    <th>Descrição do Alimento</th>
+                    <th>Calorias (kcal)</th>
+                    <th>Proteína (g)</th>
+                    <th>Carboidrato (g)</th>
+                    <th>Gordura (g)</th>
+                    <th>Fibras (g)</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
