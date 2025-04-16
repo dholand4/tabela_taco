@@ -3,7 +3,7 @@ const portionInput = document.getElementById('portion');
 const resultsBody = document.querySelector('#results tbody');
 let data = [];
 
-fetch('taco.json')
+fetch('Taco.json')
     .then(response => response.json())
     .then(json => {
         data = json;
